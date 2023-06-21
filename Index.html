@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FONT AWESOME ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Responsive portfolio website - REYNARD G. DEL MAR</title>
+  </head>
+  <body>
+    <!--==================== STYLE SWITCHER ====================-->
+    <input type="radio" name="color" id="color-1" />
+    <input type="radio" name="color" id="color-2" />
+    <input type="radio" name="color" id="color-3" />
+    <input type="radio" name="color" id="color-4" />
+    <input type="radio" name="color" id="color-5" />
+    <input type="radio" name="color" id="color-6" />
+    <input type="radio" name="color" id="color-7" />
+    <input type="radio" name="color" id="color-8" />
+    <input type="radio" name="color" id="color-9" />
+    <input type="radio" name="color" id="color-10" />
+    <input type="checkbox" id="toggler">
+    <input type="checkbox" id="day-night">
+    
+    <div class="style__switcher">
+      <label for="toggler" class="style__switcher-toggler">
+        <i class="fa-solid fa-gear fa-spin"></i>
+      </label>
+
+      <label for="day-night" class="style__switcher-theme">
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon"></i>
+      </label>
+
+      <h3 class="style__switcher-title">Theme Colors</h3>
+
+      <div class="style__switcher-colors">
+        <label for="color-1" class="color-1 color"></label>
+        <label for="color-2" class="color-2 color"></label>
+        <label for="color-3" class="color-3 color"></label>
+        <label for="color-4" class="color-4 color"></label>
+        <label for="color-5" class="color-5 color"></label>
+        <label for="color-6" class="color-6 color"></label>
+        <label for="color-7" class="color-7 color"></label>
+        <label for="color-8" class="color-8 color"></label>
+        <label for="color-9" class="color-9 color"></label>
+        <label for="color-10" class="color-10 color"></label>
+      </div>
+    </div>
+
+    <!--==================== HEADER ====================-->
+    <header class="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">REYNARD G. DEL MAR</a>
+
+        <input type="checkbox" id="nav-toggler">
+
+        <label for="nav-toggler" class="nav__toggle">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">Home</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#qualification" class="nav__link">Experience</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Services</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#works" class="nav__link">Portfolio</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <span class="home__small">Hello</span>
+            <h1 class="home__title">
+              <span>I'm</span> REYNARD <br /> 
+              a <span>Student Programmer</span>
+            </h1>
+
+            <p class="home__description">
+                This is my sample Online Portfolio as college student , Currently studying and practicing to be more efficient in my field work,
+                because nowadays computer is becoming more particular in every work place. Hoping my work will run,
+                Successfully & Promising my self and my future client that this infos will be achieved someday.
+            
+            </p>
+
+            <div class="home__btns">
+              <a href="#contact" class="btn">Hire Me</a>
+              <a href="#works" class="btn btn--transparent">Portfolio</a>
+            </div>
+          </div>
+
+          <div class="home__img-wrapper">
+            <img src="image/me.jpg" alt="" class="home__img">
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__img-wrapper">
+            <img src="image/rey.jpg" alt="" class="about__img">
+            <img src="image/rey.jpg" alt="" class="about__img">
+            <img src="image/rey.jpg" alt="" class="about__img">
+            <img src="image/rey.jpg" alt="" class="about__img">
+          </div>
+
+          <div class="about__content">
+            <h2 class="section__title" data-title="Who am i?">
+              I'm REYNARD G. DEL MAR, a Web Developer / Programmer
+            </h2>
+
+            <p class="about__description"> A normal college student who's always giving his best, trying to be better and always striving to be more productive and successful than yesterday.</p>
+
+            <ul class="about__data grid">
+              <li class="data__item">
+                <h3 class="data__title">Name:</h3>
+                <span class="data__description">REYNARD G. DEL MAR</span>
+              </li>
+
+              <li class="data__item">
+                <h3 class="data__title">Age:</h3>
+                <span class="data__description">24 Years of age</span>
+              </li>
+
+              <li class="data__item">
+                <h3 class="data__title">From:</h3>
+                <span class="data__description">CALUMPIT BULACAN, PHILIPPINES</span>
+              </li>
+
+              <li class="data__item">
+                <h3 class="data__title">Email:</h3>
+                <span class="data__description about__link">delmarreynard99@gmail.com</span>
+              </li>
+            </ul>
+
+            <div class="about__bottom">
+              <a href="" class="btn">Download Cv</a>
+
+              <div class="about__social-links">
+                <a href="https://twitter.com">
+                    <i class="fa-brands fa-twitter"></i></a>
+    
+              <a href="https://www.instagram.com/reygdm/">
+                <i class="fa-brands fa-instagram"></i></a>
+    
+              <a href="https://www.facebook.com/reynard.delmar/">
+                <i class="fa-brands fa-facebook"></i></a>
+    
+                <a href="https://ph.linkedin.com">
+                    <i class="fa-brands fa-linkedin"></i></a>
+
+                <a href="https://www.youtube.com" class="youtube">
+                    <i class="fa-brands fa-youtube"></i></a> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section" id="qualification">
+        <h2 class="section__title title-center" data-title="My Journey">
+          Qualification
+        </h2>
+
+        <div class="resume__container container grid">
+          <div class="resume__group">
+            <h3 class="resume__heading">Education</h3>
+
+            <div class="resume__items">
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">ACLC MALOLOS</h3>
+                  <hr>
+                  <h4>Associate in Computer Technology</h4>
+                  <span class="resume__icon">+</span>
+                </div>
+
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">Student Programmer</h3>
+                    <span class="resume__date">2023-Present</span>
+                  </div>
+
+                  <p class="resume__description">
+                   Hello! Im Reynard G. del Mar
+                   <br>
+                   A student Programmer ,  Front-End developer , and soon to be Available as Freelance Web Developer.
+                  
+                  </p>
+                </div>
+              </div>
+
+              <div class="resume__item">
+                <div class="resume__header">
+                    <h3 class="resume__subtitle">CCI</h3>
+                    <hr>
+                    <h4>Colegio de Calumpit Inc. </h4>
+                    <hr>
+                    <h5> Senior High School</h5>
+                  <span class="resume__icon">-</span>
+                </div>
+
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">STEM Strand</h3>
+                    <hr>
+                    <h5>Science Technology Engineering & Mathematics</h5>
+                    <span class="resume__date">2015 - 2018</span>
+                
+                  </div>
+
+                  <p class="resume__description">
+                    Being a Senior HIgh school is also tough , but i  also manage to work part time in Gym computer System as admin and also as Gym Instructor at the same time.
+                    Managing  Time for work and Study is also essential for absorbing more knowledge than usual
+                   </p>
+                  </p>
+                </div>
+              </div>
+
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">For Future JOB</h3>
+                  <hr>Additional Experience</h4>
+                 
+                  <span class="resume__icon">+</span>
+                </div>
+
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">WORKING IN PROGRESS</h3>
+                    <hr>
+                    <h5>DOWNLOADING...KNOWLEDGE</h5>
+                    <span class="resume__date"></span>
+                  </div>
+
+                  <p class="resume__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, leo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume__group">
+            <h3 class="resume__heading">Experience</h3>
+
+            <div class="resume__items">
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">Bulacan State University</h3>
+                  <hr>
+                  <h5>Bachelor of Science in Mechanical Engineering</h5>
+                  <span class="resume__icon">+</span>
+                </div>
+
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">Former Student of BSME</h3>
+                    <span class="resume__date">2018 -2020</span>
+                  </div>
+
+                  <p class="resume__description">
+                    Still Knowledgeable on my past course before transferring to my present College, the AMA COMPUTER LEARNING CENTER.
+                    I still partially know also how to use AutoCAD
+                  </p>
+                </div>
+              </div>
+
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">CNHS</h3>
+                  <hr>
+                    <h4>Calumpit National High School</h4>
+                    <hr>
+                    <h5>Junior High School</h5>
+                  <span class="resume__icon">-</span>
+                </div>
+
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">Student Athlete</h3>
+                    <hr>
+                    <h5>Junior High School</h5>
+                    <hr>
+                    <h5>Student Athletel</h5>
+                    <span class="resume__date">2012 -2015</span>
+                  </div>
+
+                  <p class="resume__description">
+                    Normal student who loves to plays Soccer/Football who represent our school & Basketball just for fun!   :)
+                    <br>
+                    Practise Makes Perfect!
+                    <br>
+                    Practise grows and help you Improve!
+                    <br>
+                    Trust God and Trust the Process!
+                  </p>
+                </div>
+              </div>
+
+              <div class="resume__item">
+                <div class="resume__header">
+                    <h3 class="resume__subtitle">For Future JOB</h3>
+                    <hr>Additional Experience</h4>
+                   
+                    <span class="resume__icon">+</span>
+                  </div>
+  
+                  <div class="resume__content">
+                    <div class="resume__date-title">
+                      <h3 class="resume__title">WORKING IN PROGRESS</h3>
+                      <hr>
+                      <h5>DOWNLOADING...KNOWLEDGE</h5>
+                      <span class="resume__date"></span>
+                    </div>
+  
+                    <p class="resume__description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, leo.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section__title title-center" data-title="Services">
+          What I do for you 
+        </h2>
+
+        <div class="services__container container grid">
+          <div class="services__item">
+            <i class="fa-solid fa-pen-to-square services__icon"></i>
+
+            <h3 class="services__title">CSS APP</h3>
+            <p class="services__description">
+              Services with more than 1½ years of experience. Providing quality 
+              work and good creative work and color/image combination.
+            </p>
+
+            <span class="services__no">01</span>
+          </div>
+
+          <div class="services__item">
+            <i class="fa-solid fa-laptop services__icon"></i>
+
+            <h3 class="services__title">Application Development</h3>
+            <p class="services__description">
+              Knowledge shared from our best instructors for more than 2 years who refined our skills to its greater forms.
+            </p>
+
+            <span class="services__no">02</span>
+          </div>
+
+          <div class="services__item">
+            <i class="fa-solid fa-chart-area services__icon"></i>
+
+            <h3 class="services__title">Research & Analysis</h3>
+            <p class="services__description">
+              Services and Knowledge combined for more than 5 years. Providing quality 
+              work and efficiency to our clients and companies.
+            </p>
+
+            <span class="services__no">03</span>
+          </div>
+
+          <div class="services__item">
+            <i class="fa-solid fa-pen-to-square services__icon"></i>
+
+            <h3 class="services__title">Web Design</h3>
+            <p class="services__description">
+              Skill that I'm proud of, Worthy of giving the style and Design my client want.
+            </p>
+
+            <span class="services__no">04</span>
+          </div>
+
+          <div class="services__item">
+            <i class="fa-solid fa-laptop services__icon"></i>
+
+            <h3 class="services__title">Web Development</h3>
+            <p class="services__description">
+              I can give you the best and appropriate Website you want based on the Features and Ideas of Website you need on your company.
+            </p>
+
+            <span class="services__no">05</span>
+          </div>
+
+          <div class="services__item">
+            <i class="fa-solid fa-chart-area services__icon"></i>
+
+            <h3 class="services__title">Upgrades</h3>
+            <p class="services__description">
+              From the help and lessons of our best Instructors, We can offer you our system upgrades for its more efficient security features and updates .
+            </p>
+
+            <span class="services__no">06</span>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section">
+        <h2 class="section__title title-center" data-title="My Talent">
+          Professional Skills
+        </h2>
+
+        <div class="skills__container container grid">
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">HTML </h3>
+              <span class="skills__no">100 %</span>
+            </div>
+
+            <p class="skills__description">
+             Aware and Knowlegable of the features I use.
+            </p>
+
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 100%;">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">CSS</h3>
+              <span class="skills__no">100 %</span>
+            </div>
+
+            <p class="skills__description">
+             Designing is my Favorite Part , Great combinations for my work.
+            </p>
+
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 100%;">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">PHP</h3>
+              <span class="skills__no">85 %</span>
+            </div>
+
+            <p class="skills__description">
+              Hard to study but useful for work.Don't forget to practise it.
+            </p>
+
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 85%;">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">JAVASCRIPT</h3>
+              <span class="skills__no">55 %</span>
+            </div>
+
+            <p class="skills__description">
+             I still need to study this part , even though a programmer have a hard times sometimes!
+            </p>
+
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 55%;">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">JAVA</h3>
+              <span class="skills__no">55 %</span>
+            </div>
+
+            <p class="skills__description">
+                I still need to study this part , even though a programmer have a hard times sometimes!
+            </p>
+
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 55%;">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">C++</h3>
+              <span class="skills__no">60 %</span>
+            </div>
+
+            <p class="skills__description">
+              Continuously learning , and giving a heart to accept all new knowledge. Just Fight and survive for it.
+            </p>
+
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 60%;">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PORTFOLIO ====================-->
+      <section class="works section" id="works">
+        <h2 class="section__title title-center" data-title="My Portfolio">
+          Recent Works
+        </h2>
+
+        <div class="work__container container grid">
+          <div class="work__card">
+            <img src="image/p1.jpg" alt="" class="work__img">
+
+            <div class="work__details">
+              <h3 class="work__title">Web Design</h3>
+              <span class="work__description">This is my a sample of First Complete project from First Semester on our subject Web Application Development 1.</span>
+            </div>
+          </div>
+
+          <div class="work__card">
+            <img src="image/p2.jpg" alt="" class="work__img">
+
+            <div class="work__details">
+              <h3 class="work__title">Web Design</h3>
+              <span class="work__description">This is my Sample Portfolio , Incomplete but still working.</span>
+            </div>
+          </div>
+
+          <div class="work__card">
+            <img src="image/p3.jpg" alt="" class="work__img">
+
+            <div class="work__details">
+              <h3 class="work__title">PhotoShopEditing</h3>
+              <span class="work__description">This is a short description</span>
+            </div>
+          </div>
+
+          <div class="work__card">
+            <img src="image/p4.jpg" alt="" class="work__img">
+
+            <div class="work__details">
+              <h3 class="work__title">Web Design</h3>
+              <span class="work__description">This is a short description</span>
+            </div>
+          </div>
+
+          <div class="work__card">
+            <img src="image/p5.jpg" alt="" class="work__img">
+
+            <div class="work__details">
+              <h3 class="work__title">Android Design</h3>
+              <span class="work__description">This is a short description</span>
+            </div>
+          </div>
+
+          <div class="work__card">
+            <img src="image/p6.jpg" alt="" class="work__img">
+
+            <div class="work__details">
+              <h3 class="work__title">Web Design</h3>
+              <span class="work__description">This is a short description</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== TESTIMONIALS ====================-->
+      <section class="testimonials section">
+        <h2 class="section__title title-center" data-title="Testimonials">
+          What My Clients Say
+        </h2>
+
+        <div class="testimonials__container container grid">
+          <div class="testimonials__item">
+            <p class="testimonials__description">
+                My Buddy / Classmate / Groupmate . We work together to pass us subject from our first semester with the help of one another ,
+                 team work is the key and he will be the one of my testimony of creating our Web Application Development 1 to its Success!
+            </p>
+
+            <div class="testimonials__data">
+              <img src="image/dustin.jpg" alt="" class="testimonials__img">
+
+              <div>
+                <h3 class="testimonials__name">Dustin Jade Monedero</h3>
+                <span class="testimonials__identity">Asian Cutie / Hagonoy Bulacan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonials__item">
+            <p class="testimonials__description">
+              My Buddy / Classmate / Groupmate . We work together to pass us subject from our first semester with the help of one another ,
+               team work is the key and she will be the 2nd of my testimony of creating our Web Application Development 1 to its Success!
+            </p>
+
+            <div class="testimonials__data">
+              <img src="image/kaela.jpg" alt="" class="testimonials__img">
+
+              <div>
+                <h3 class="testimonials__name">Kaela Mae Lita</h3>
+                <span class="testimonials__identity">Hagonoy Bulacan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title title-center" data-title="Get in touch">
+          Contact Me
+        </h2>
+
+        <div class="contact__container container grid">
+          <div class="contact__details">
+            <div class="contact__item">
+              <i class="fa-solid fa-phone contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Call Us</h3>
+                <span class="contact__data">+63 - 975 - 969 - ****</span>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <i class="fa-solid fa-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email Us</h3>
+                <span class="contact__data">delmarreynard99@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <i class="fa-solid fa-location-dot contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Address</h3>
+                <span class="contact__data">Calumpit Bulacan Philippines</span>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form">
+            <div class="form__group">
+              <div class="form__input">
+                <input type="text" placeholder="Name" class="input__control">
+              </div>
+
+              <div class="form__input">
+                <input type="email" placeholder="Email" class="input__control">
+              </div>
+            </div>
+
+            <div class="form__input">
+              <input type="text" placeholder="Subject" class="input__control">
+            </div>
+
+            <div class="form__input">
+              <textarea name="" id="" placeholder="Message" cols="30" rows="10" class="input__control textarea"></textarea>
+            </div>
+
+            <button class="btn contact__btn">Send  Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <p>&copy; Copyright 2023 <br> Designed By <a href="https://github.com/Reyhub-99" target="_blank">Reynard G. del Mar</a></p>
+
+        <div class="footer__social-links">
+            <a href="https://twitter.com">
+                <i class="fa-brands fa-twitter"></i></a>
+
+          <a href="https://www.instagram.com/reygdm/">
+            <i class="fa-brands fa-instagram"></i></a>
+
+          <a href="https://www.facebook.com/reynard.delmar/">
+            <i class="fa-brands fa-facebook"></i></a>
+
+            <a href="https://ph.linkedin.com">
+                <i class="fa-brands fa-linkedin"></i></a>
+
+            <a href="https://www.youtube.com" class="youtube">
+                <i class="fa-brands fa-youtube"></i></a> 
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
